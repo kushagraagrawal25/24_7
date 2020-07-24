@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  
+
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@1,600&family=PT+Sans+Narrow:wght@700&family=Source+Sans+Pro&display=swap');
+h1{
+font-family: 'Montserrat', sans-serif bold;
+font-size: 30px;
+color:white;
+}
+
+h3{ font-family: 'Montserrat', sans-serif;
+ font-size:20px;}
+
+.content{
+	margin-left:40px;
+	margin-top:40px;
+}
+
+.temp{
+	text-align:right;
+}
+.button {
+  background-color: #2EC4B6; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif bold;
+}
+
+i , h1{
+	display:inline-block;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+<body style="font-style:montserrat;">
+<section style="height:40px;">
+	<div class="card " style="background-color: #2ECAB6; width:50%; margin:0 auto;">
+	<div class="card-body" >
+		
+		<a><i class="fa fa-arrow-left" style="font-size:24px; color:white;"></i></a>
+
+		<h1 style="font-size:30px;">  24/7 Help </h1>
+		
+
+
+	</div>
+    </div>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+
+<section>
+	<div class="card shadow-lg p-3 mb-5 bg-white rounded " style="width:50%; margin:0 auto;">
+	<div class="card-body">
+        <div class="modal-header">
+            <h3 class="modal-title">Your Query is important</h3>
+        </div>
+            
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form class="was-validated">
+              <div class="mb-3">
+                <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Write to us" required></textarea>
+                <div class="invalid-feedback">
+                  Please enter a message in the textarea.
+                </div>
+            </form>
+                    
+            <div class="temp">
+                <button class="button"><span><b> Submit </b></span></button>
+            </div>
+
+            <br>
+            <br>
+
+            <table class="w3-table-all">
+                <col width=3% />
+                <col width=34% />
+                <col width=32% />
+                <col width=35% />
+                <thead>
+                  <tr style="background-color: #2ECAB6; color: white;">
+                    <th>S.No.</th>
+                    <th>Previous</th>
+                    <th>Response</th>
+                    <th>Date & Time</th>
+                </tr>
+                </thead>
+                <tr class="w3-hover-black">
+                    <th>1</th>
+                  <td>Is is safe to Login through my MailId? </td>
+                  <td>Yes, Customer data is kept private. Refer T&C</td>
+                  <td>24 November, 2020 [08:55]</td>
+                </tr>
+                <tr class="w3-hover-blue">
+                    <th>2</th>
+                  <td>Is is true that you don't charge any brokerage from us?</td>
+                  <td>It's clearly mentioned that there isn't any charge for brokerage.</td>
+                  <td>9 October, 2020 [20:34]</td>
+                </tr>
+                <tr class="w3-hover-black">
+                    <th>3</th>
+                  <td>I want to know the date of ur website launch?</td>
+                  <td>We have launched our Website on August '20.</td>
+                  <td>19 September, 2020 [20:34]</td>
+                </tr>
+              </table>
+        </div>
+    </div>        
+    </div> 
+</section>
+
+</body>
+</html>
